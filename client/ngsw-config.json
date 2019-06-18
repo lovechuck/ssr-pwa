@@ -10,6 +10,9 @@
         "/index.html",
         "/*.css",
         "/*.js"
+      ],
+      "urls": [
+        "https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
       ]
     }
   }, {
@@ -27,7 +30,7 @@
 
   ],
   "appData": {
-
+    "msg": "有可用的新版本，是否加载?"
   },
   "navigationUrls": [
 
