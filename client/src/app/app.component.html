@@ -2,7 +2,7 @@
   <div class="container">
     <div class="header">
       <div class="logo">
-        <h1><a href="index.html">Home</a></h1>
+        <h1><a [routerLink]="[ '/home' ]">Skate</a></h1>
       </div>
       <div class="h_menu">
         <a id="touch-menu" class="mobile-menu" href="#">Menu</a>
@@ -11,9 +11,9 @@
             <li class="activate"><a [routerLink]="[ '/home' ]" routerLinkActive="active">HOME</a></li>
             <li><a [routerLink]="[ '/about' ]" routerLinkActive="active">ABOUT</a></li>
             <li><a [routerLink]="[ '/service' ]" routerLinkActive="active">SERVICE</a></li>
-            <li><a [routerLink]="[ '/photo' ]" routerLinkActive="active">PHOTO</a></li>
+            <li><a [routerLink]="[ '/portfolio' ]" routerLinkActive="active">PORTFOLIO</a></li>
             <li><a [routerLink]="[ '/blog' ]" routerLinkActive="active">BLOG</a></li>
-            <li><a [routerLink]="[ '/concat' ]" routerLinkActive="active">CONTACT</a></li>
+            <li><a [routerLink]="[ '/contact' ]" routerLinkActive="active">CONTACT</a></li>
           </ul>
         </nav>
       </div>

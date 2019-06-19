@@ -3,10 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
     "dev": "ng run client:app-shell",
     "prod": "ng run client:app-shell -c production",
-    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
