@@ -1,11 +1,11 @@
 {
   "name": "client",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "dev": "ng run client:app-shell",
-    "prod": "ng run client:app-shell:production",
+    "prod": "ng run client:app-shell -c production",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",

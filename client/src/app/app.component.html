@@ -2,32 +2,25 @@
   <div class="container">
     <div class="header">
       <div class="logo">
-        <h1><a href="index.html">Skate</a></h1>
+        <h1><a href="index.html">Home</a></h1>
       </div>
       <div class="h_menu">
         <a id="touch-menu" class="mobile-menu" href="#">Menu</a>
         <nav>
           <ul class="menu list-unstyled">
-            <li class="activate"><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="404.html">services</a></li>
-            <li><a href="portfolio.html">PORTFOLIO</a>
-              <ul class="sub-menu list-unstyled">
-                <li><a href="portfolio.html">Portfolio1</a></li>
-                <li><a href="portfolio.html">Portfolio2</a></li>
-                <li><a href="portfolio.html">Portfolio3</a></li>
-              </ul>
-            </li>
-            <li><a href="blog.html">BLOG</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
+            <li class="activate"><a [routerLink]="[ '/home' ]" routerLinkActive="active">HOME</a></li>
+            <li><a [routerLink]="[ '/about' ]" routerLinkActive="active">ABOUT</a></li>
+            <li><a [routerLink]="[ '/service' ]" routerLinkActive="active">SERVICE</a></li>
+            <li><a [routerLink]="[ '/photo' ]" routerLinkActive="active">PHOTO</a></li>
+            <li><a [routerLink]="[ '/blog' ]" routerLinkActive="active">BLOG</a></li>
+            <li><a [routerLink]="[ '/concat' ]" routerLinkActive="active">CONTACT</a></li>
           </ul>
         </nav>
-        <script src="js/menu.js" type="text/javascript"></script>
       </div>
       <div class="clearfix"></div>
     </div>
     <div class="grid_12">
-      <img src="images/color_stripe.jpg" class="img-responsive" class="c_stripe">
+      <img src="assets/images/color_stripe.jpg" class="img-responsive" class="c_stripe">
     </div>
   </div>
 </div>
@@ -38,7 +31,7 @@
     <div class="footer">
       <div class="col-md-4 footer1_of_3">
         <div class="f_logo">
-          <a href="index.html"><img src="images/logo.png" alt="" /></a>
+          <a href="index.html"><img src="assets/images/logo.png" alt="" /></a>
         </div>
         <p class="f_para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
           been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
@@ -74,7 +67,7 @@
         <h4>from the <span>blog</span></h4>
         <div class="blog_list">
           <div class="col-xs-3 f_pic">
-            <a href="blog.html"><img src="images/blog_pic1.jpg" alt="" class="img-responsive" /></a>
+            <a href="blog.html"><img src="assets/images/blog_pic1.jpg" alt="" class="img-responsive" /></a>
           </div>
           <div class="col-xs-9 f_text">
             <a href="blog.html">
@@ -86,7 +79,7 @@
         </div>
         <div class="blog_list">
           <div class="col-xs-3 f_pic">
-            <a href="blog.html"><img src="images/blog_pic2.jpg" alt="" class="img-responsive" /></a>
+            <a href="blog.html"><img src="assets/images/blog_pic2.jpg" alt="" class="img-responsive" /></a>
           </div>
           <div class="col-xs-9 f_text">
             <a href="blog.html">
