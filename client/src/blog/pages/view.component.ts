@@ -1,3 +1,5 @@
+import { article } from './../model/article';
+import { BlogService } from './../services/blog.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewComponent implements OnInit {
 
-  constructor() { }
+  item: article;
+
+  constructor(private servive: BlogService) {
+
+  }
 
   ngOnInit() {
+    this.servive.view("1").subscribe((item) => {
+      this.item = item
+    })
   }
 
 }

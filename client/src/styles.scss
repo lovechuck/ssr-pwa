@@ -83,7 +83,7 @@ nav {
   margin-left: 0;
 }
 
-.menu li.activate a,
+.menu li a.active,
 .menu li a:hover {
   background: #6cb16c;
   box-shadow: inset 0px -4px 0px #5a9e5a;
@@ -1612,7 +1612,7 @@ h5.post-author_head a {
     text-align: center;
   }
 
-  .menu li.activate a,
+  .menu li a.activate,
   .menu li a:hover {
     background: #ffffff;
     box-shadow: none;

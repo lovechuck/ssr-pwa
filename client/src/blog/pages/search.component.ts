@@ -1,4 +1,6 @@
+import { BlogService } from './../services/blog.service';
 import { Component, OnInit } from '@angular/core';
+import { article } from '../model/article';
 
 @Component({
   selector: 'app-search',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
-  constructor() { }
+  items: Array<article> = []
+
+  constructor(private sevice: BlogService) {
+
+  }
 
   ngOnInit() {
+    this.sevice.search(0).subscribe((items) => {
+      this.items = items
+    })
   }
 
 }

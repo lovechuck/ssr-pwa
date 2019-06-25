@@ -7,7 +7,7 @@ var helmet = require('helmet')
 var favicon = require('serve-favicon');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var blogRouter = require('./routes/blog');
 
 var app = express();
 
@@ -23,6 +23,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'wwwroot')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/blog', blogRouter);
 
 module.exports = app;
